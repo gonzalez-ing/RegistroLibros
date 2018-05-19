@@ -1,0 +1,14 @@
+C:\Users\adrianesteban\Desktop\Tarea 2\RegistroLibros\RegistroLibros\bin\Debug\RegistroLibros.exe.config
+C:\Users\adrianesteban\Desktop\Tarea 2\RegistroLibros\RegistroLibros\bin\Debug\RegistroLibros.exe
+C:\Users\adrianesteban\Desktop\Tarea 2\RegistroLibros\RegistroLibros\bin\Debug\RegistroLibros.pdb
+C:\Users\adrianesteban\Desktop\Tarea 2\RegistroLibros\RegistroLibros\bin\Debug\EntityFramework.dll
+C:\Users\adrianesteban\Desktop\Tarea 2\RegistroLibros\RegistroLibros\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\adrianesteban\Desktop\Tarea 2\RegistroLibros\RegistroLibros\bin\Debug\EntityFramework.xml
+C:\Users\adrianesteban\Desktop\Tarea 2\RegistroLibros\RegistroLibros\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\adrianesteban\Desktop\Tarea 2\RegistroLibros\RegistroLibros\obj\Debug\RegistroLibros.csprojResolveAssemblyReference.cache
+C:\Users\adrianesteban\Desktop\Tarea 2\RegistroLibros\RegistroLibros\obj\Debug\RegistroLibros.Form1.resources
+C:\Users\adrianesteban\Desktop\Tarea 2\RegistroLibros\RegistroLibros\obj\Debug\RegistroLibros.Properties.Resources.resources
+C:\Users\adrianesteban\Desktop\Tarea 2\RegistroLibros\RegistroLibros\obj\Debug\RegistroLibros.csproj.GenerateResource.Cache
+C:\Users\adrianesteban\Desktop\Tarea 2\RegistroLibros\RegistroLibros\obj\Debug\RegistroLibros.csproj.CoreCompileInputs.cache
+C:\Users\adrianesteban\Desktop\Tarea 2\RegistroLibros\RegistroLibros\obj\Debug\RegistroLibros.exe
+C:\Users\adrianesteban\Desktop\Tarea 2\RegistroLibros\RegistroLibros\obj\Debug\RegistroLibros.pdb
