@@ -57,16 +57,34 @@
     <Compile Include="DAL\Contexto.cs" />
     <Compile Include="Entidades\Libros.cs" />
     <Compile Include="Entidades\TipoId.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Consultas\Consulta_Libros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\Consulta_Libros.Designer.cs">
+      <DependentUpon>Consulta_Libros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registro\Registro_Libros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registro\Registro_Libros.Designer.cs">
+      <DependentUpon>Registro_Libros.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Consultas\Consulta_Libros.resx">
+      <DependentUpon>Consulta_Libros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Registro\Registro_Libros.resx">
+      <DependentUpon>Registro_Libros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -92,9 +110,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UI\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="DAL\Scripts\LibrosDb.sql" />
     <None Include="Resources\find.png" />

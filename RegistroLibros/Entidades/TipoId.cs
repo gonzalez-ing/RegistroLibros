@@ -12,6 +12,7 @@ namespace RegistroLibros.Entidades
         {
             Viejo_Testamento = 0,
             Nuevo_Testamento = 1
+
         }
     }
 }

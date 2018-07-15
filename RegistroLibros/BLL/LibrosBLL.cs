@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace RegistroLibros.BLL
 {
-    class LibrosBLL
+    public class LibrosBLL
     {
         public static bool Guardar(Libros libros)
         {
@@ -34,7 +34,9 @@ namespace RegistroLibros.BLL
             return paso;
         }
 
-
+        /// Permite Modificar una entidad en la base de datos 
+        /// <param name="Libros">Una instancia de Libros</param>
+        /// <returns>Retorna True si Modifico o Falso si falló </returns>
         public static bool Modificar(Libros libros)
         {
             bool paso = false;
@@ -55,7 +57,9 @@ namespace RegistroLibros.BLL
             return paso;
         }
 
-
+        /// Permite Eliminar una entidad en la base de datos
+        ///<param name="id">El Id del Libro que se desea eliminar </param>
+        /// <returns>Retorna True si Eliminó o Falso si falló </returns>
         public static bool Eliminar(int id)
         {
             bool paso = false;
@@ -81,13 +85,16 @@ namespace RegistroLibros.BLL
             return paso;
         }
 
+        /// Permite Buscar una entidad en la base de datos
+        ///<param name="id">El Id del Libro que se desea encontrar </param>
+        /// <returns>Retorna el libro encontrado </returns>
         public static Libros Buscar(int id)
         {
             Contexto contexto = new Contexto();
-            Libros libros = new Libros();
+            Libros persona = new Libros();
             try
             {
-                libros = contexto.Libros.Find(id);
+                persona = contexto.Libros.Find(id);
                 contexto.Dispose();
             }
             catch (Exception)
@@ -95,17 +102,19 @@ namespace RegistroLibros.BLL
 
                 throw;
             }
-            return libros;
+            return persona;
         }
 
-
+        /// Permite extraer una lista de Libros de la base de datos
+        ///<param name="expression">Expression Lambda conteniendo los filtros de busqueda </param>
+        /// <returns>Retorna una lista de Libros</returns>
         public static List<Libros> GetList(Expression<Func<Libros, bool>> expression)
         {
-            List<Libros> Personas = new List<Libros>();
+            List<Libros> Libros = new List<Libros>();
             Contexto contexto = new Contexto();
             try
             {
-                Personas = contexto.Libros.Where(expression).ToList();
+                Libros = contexto.Libros.Where(expression).ToList();
                 contexto.Dispose();
             }
             catch (Exception)
@@ -114,7 +123,7 @@ namespace RegistroLibros.BLL
                 throw;
             }
 
-            return Personas;
+            return Libros;
         }
     }
 }

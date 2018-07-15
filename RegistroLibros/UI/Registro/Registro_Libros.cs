@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace RegistroLibros
 {
-    public partial class Form1 : Form
+    public partial class Registro_Libros : Form
     {
         Libros libros;
-        public Form1()
+        public Registro_Libros()
         {
             InitializeComponent();
             libros = new Libros();
@@ -69,6 +69,7 @@ namespace RegistroLibros
 
             if (libros != null)
             {
+                FechaDateTimePicker.Value = libros.Fecha;
                 DescripciontextBox.Text = libros.Descripcion;
                 SiglastextBox.Text = libros.Siglas;
             }
@@ -82,6 +83,7 @@ namespace RegistroLibros
             Libros libros = new Libros();
 
             libros.LibroId = Convert.ToInt32(IdnumericUpDown.Value);
+            libros.Fecha = FechaDateTimePicker.Value;
             libros.Descripcion = DescripciontextBox.Text;
             libros.Siglas = SiglastextBox.Text;
 
@@ -102,6 +104,11 @@ namespace RegistroLibros
 
             //todo: validar demas campos
             return HayErrores;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

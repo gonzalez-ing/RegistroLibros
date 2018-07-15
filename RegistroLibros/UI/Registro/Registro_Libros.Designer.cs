@@ -1,6 +1,6 @@
 ﻿namespace RegistroLibros
 {
-    partial class Form1
+    partial class Registro_Libros
     {
         /// <summary>
         /// Required designer variable.
@@ -44,6 +44,8 @@
             this.MyerrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.Buscarbutton = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.FechaDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.IdnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyerrorProvider)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +60,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 110);
+            this.label2.Location = new System.Drawing.Point(14, 146);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 2;
@@ -66,7 +68,7 @@
             // 
             // DescripciontextBox
             // 
-            this.DescripciontextBox.Location = new System.Drawing.Point(82, 107);
+            this.DescripciontextBox.Location = new System.Drawing.Point(83, 143);
             this.DescripciontextBox.Name = "DescripciontextBox";
             this.DescripciontextBox.Size = new System.Drawing.Size(244, 20);
             this.DescripciontextBox.TabIndex = 3;
@@ -74,7 +76,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 173);
+            this.label3.Location = new System.Drawing.Point(27, 189);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 4;
@@ -82,7 +84,7 @@
             // 
             // SiglastextBox
             // 
-            this.SiglastextBox.Location = new System.Drawing.Point(82, 170);
+            this.SiglastextBox.Location = new System.Drawing.Point(82, 186);
             this.SiglastextBox.Name = "SiglastextBox";
             this.SiglastextBox.Size = new System.Drawing.Size(244, 20);
             this.SiglastextBox.TabIndex = 5;
@@ -181,12 +183,34 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "Adrian Gonzalez 2013-0121";
             // 
-            // Form1
+            // FechaDateTimePicker
+            // 
+            this.FechaDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FechaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.FechaDateTimePicker.Location = new System.Drawing.Point(82, 101);
+            this.FechaDateTimePicker.Name = "FechaDateTimePicker";
+            this.FechaDateTimePicker.Size = new System.Drawing.Size(244, 21);
+            this.FechaDateTimePicker.TabIndex = 34;
+            this.FechaDateTimePicker.Value = new System.DateTime(2018, 7, 15, 0, 0, 0, 0);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label7.Location = new System.Drawing.Point(25, 108);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(37, 13);
+            this.label7.TabIndex = 33;
+            this.label7.Text = "Fecha";
+            // 
+            // Registro_Libros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(357, 357);
+            this.Controls.Add(this.FechaDateTimePicker);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.Buscarbutton);
             this.Controls.Add(this.label5);
@@ -202,8 +226,9 @@
             this.Controls.Add(this.IdnumericUpDown);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Name = "Form1";
+            this.Name = "Registro_Libros";
             this.Text = "Registro De Libros";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.IdnumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyerrorProvider)).EndInit();
             this.ResumeLayout(false);
@@ -228,6 +253,8 @@
         private System.Windows.Forms.ErrorProvider MyerrorProvider;
         private System.Windows.Forms.Button Buscarbutton;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker FechaDateTimePicker;
+        private System.Windows.Forms.Label label7;
     }
 }
 
